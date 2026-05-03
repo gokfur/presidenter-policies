@@ -24,7 +24,7 @@ On the device you played them on. Optional iCloud sync (Settings → iCloud) kee
 
 ### My reign reset itself / a card I expected didn't appear.
 
-The deck deliberately randomises across reigns to keep variety high — there are 16,427 cards across 89 thematic decks, and you'll only ever see a subset on each playthrough.
+The deck deliberately randomises across reigns to keep variety high — there are 19,755 cards across 89 thematic decks, and you'll only ever see a subset on each playthrough.
 
 If you think a card was unfairly cut, a flag chain broke, or a feature regressed, email me with as much detail as you can. The more specific, the easier to fix.
 

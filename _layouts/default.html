@@ -5,14 +5,16 @@
 
 {% seo %}
     <!-- NO THIRD PARTY REQUESTS ON THESE PAGES.
-         The Cayman theme's own layout links a stylesheet from fonts.googleapis.com and
-         preconnects to fonts.gstatic.com, which hands every visitor's IP address to Google
+         The Cayman theme's own layout links a stylesheet from Google's font servers and
+         preconnects to them, which hands every visitor's IP address to a third party
          before they have read a word of the privacy policy. A German court (Munich I,
-         January 2022) awarded damages to a single visitor for exactly that. Our own policy
-         page promising "we do not collect anything" while leaking IPs to a third party was
-         not a good look, so this layout replaces the theme's and drops both links.
-         Nothing is self-hosted either: the page uses the fonts already on the reader's
-         device. Everything this page loads comes from this repository. -->
+         January 2022) awarded damages to a single visitor for exactly that. A policy page
+         promising "we do not collect anything" while leaking IPs was not a good look, so
+         this layout replaces the theme's and drops both links. Nothing is self-hosted
+         either: the page uses the fonts already on the reader's device. Everything this
+         page loads comes from this repository -- grep the built page for an external
+         href or src and the only hits are links in the text, which load nothing until
+         the reader clicks them. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">

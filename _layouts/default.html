@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <!-- NO THIRD PARTY REQUESTS ON THESE PAGES.
+         The Cayman theme's own layout links a stylesheet from fonts.googleapis.com and
+         preconnects to fonts.gstatic.com, which hands every visitor's IP address to Google
+         before they have read a word of the privacy policy. A German court (Munich I,
+         January 2022) awarded damages to a single visitor for exactly that. Our own policy
+         page promising "we do not collect anything" while leaking IPs to a third party was
+         not a good look, so this layout replaces the theme's and drops both links.
+         Nothing is self-hosted either: the page uses the fonts already on the reader's
+         device. Everything this page loads comes from this repository. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <style>
+      /* System font stack: no download, no request, and it looks native on every device. */
+      body, .page-header, .main-content { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    </style>
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-credits">Hosted on GitHub Pages.</span>
+      </footer>
+    </main>
+  </body>
+</html>
